@@ -28,7 +28,7 @@ class EventsTableSeeder extends Seeder
         {
             DB::table('events')->insert([[
                 'email' => 'person@hotmail.com',
-                'phonenumber' => '',
+                'phonenumber' => '04'.rand(10, 90).rand(10, 90).rand(10, 90).rand(10, 90),
                 'date' => date('Y-m-d', strtotime("+".rand(30, 90)." days")),
                 'start' => rand(12, 18).':'.rand(0, 60).':00',
                 'end' => rand(19, 24).':'.rand(0, 60).':00',
