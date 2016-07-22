@@ -70,8 +70,8 @@
 <?php foreach ($events as $event) : ?>
                     <tr>
                         <td><?=$event->id;?></td>
-                        <td><?=$event->phonenumber;?></td>
-                        <td><?=$event->email;?></td>
+                        <td>*hidden*</td>
+                        <td>*hidden*</td>
                         <td><?=$event->date;?></td>
                         <td><?=$event->start;?></td>
                         <td style="border: 0;"><?=$event->end;?></td>
