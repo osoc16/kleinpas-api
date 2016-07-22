@@ -11,6 +11,28 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(EventsTableSeeder::class);
+    }
+}
+
+class EventsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        for ($i = 1; $i <= 20; $i++)
+        {
+            DB::table('events')->insert([[
+                'email' => 'person@hotmail.com',
+                'phonenumber' => '',
+                'date' => date('Y-m-d', strtotime("+".rand(30, 90)." days")),
+                'start' => rand(12, 18).':'.rand(0, 60).':00',
+                'end' => rand(19, 24).':'.rand(0, 60).':00',
+            ]]);
+        }
     }
 }
