@@ -15,5 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// GET
 Route::get('/events', 'EventsController@getEvents');
-Route::get('/events/{id}', 'EventsController@getEventById');
+Route::get('/events/{id}', 'EventsController@getEventById')->where('id','[0-9]+');
+
+// POST
+Route::post('/add', 'EventsController@addEvent');
