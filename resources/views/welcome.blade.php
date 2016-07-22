@@ -118,7 +118,6 @@
             </p>
             <p class="quote">
                 var settings = {<br>
-                &emsp;"async": true,<br>
                 &emsp;"crossDomain": true,<br>
                 &emsp;"url": "http://95.85.15.210/add",<br>
                 &emsp;"method": "POST",<br>
@@ -137,21 +136,7 @@
                 $.ajax(settings).done(function (response) {<br>
                 &emsp;console.log(response);<br>
                 });
-            </p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            </p><h1></h1><br><br><br><br><br>
         </div>
     </body>
 </html>
