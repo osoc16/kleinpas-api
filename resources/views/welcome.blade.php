@@ -88,7 +88,7 @@
             <p class="quote">
                 &emsp;var settings = {<br>
                 &emsp;&emsp;"crossDomain": true,<br>
-                &emsp;&emsp;"url": "http://95.85.15.210/events",<br>
+                &emsp;&emsp;"url": "http://95.85.15.210:4000/events",<br>
                 &emsp;&emsp;"method": "GET"<br>
                 &emsp;}<br>
                 <br>
@@ -103,7 +103,7 @@
             <p class="quote">
                 &emsp;var settings = {<br>
                 &emsp;&emsp;"crossDomain": true,<br>
-                &emsp;&emsp;"url": "http://95.85.15.210/events/<strong>ID</strong>",<br>
+                &emsp;&emsp;"url": "http://95.85.15.210:4000/events/<strong>ID</strong>",<br>
                 &emsp;&emsp;"method": "GET"<br>
                 &emsp;}<br>
                 <br>
@@ -119,7 +119,7 @@
             <p class="quote">
                 var settings = {<br>
                 &emsp;"crossDomain": true,<br>
-                &emsp;"url": "http://95.85.15.210/add",<br>
+                &emsp;"url": "http://95.85.15.210:4000/add",<br>
                 &emsp;"method": "POST",<br>
                 &emsp;"headers": {<br>
                 &emsp;&emsp;"content-type": "application/x-www-form-urlencoded"<br>
