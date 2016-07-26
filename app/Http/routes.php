@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+header("Access-Control-Allow-Origin: *");
+header('Access-Control-Allow-Credentials: true');
+
+Route::get('/', function () { return view('welcome'); });
+
+// Overview
+Route::get('/overview', function() { return view('overview'); });
 
 // GET
 Route::get('/events', 'EventsController@getEvents');

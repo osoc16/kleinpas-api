@@ -57,29 +57,6 @@
     <body>
         <div id="content">
             <h1>Kleinpas API</h1>
-            <table>
-                <tr class="top">
-                    <td style="width: 60px;">ID</td>
-                    <td style="width: 200px;">Phonenumber</td>
-                    <td style="width: 400px;">E-Mail</td>
-                    <td style="width: 200px;">Date</td>
-                    <td style="width: 100px;">Start</td>
-                    <td style="width: 100px; border: 0;">End</td>
-                </tr>
-<?php $events = DB::table('events')->get(); ?>
-<?php foreach ($events as $event) : ?>
-                    <tr>
-                        <td><?=$event->id;?></td>
-                        <td>*hidden*</td>
-                        <td>*hidden*</td>
-                        <td><?=$event->date;?></td>
-                        <td><?=$event->start;?></td>
-                        <td style="border: 0;"><?=$event->end;?></td>
-                    </tr>
-<?php endforeach; ?>
-            </table>
-
-            <h1>POST and GET</h1>
             <h2>GET</h2>
             <p>
                 <strong>getEvents</strong>: Gets all the events.<br>
