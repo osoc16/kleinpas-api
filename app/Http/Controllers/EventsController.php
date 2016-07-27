@@ -34,6 +34,7 @@ class EventsController extends Controller
             $event = new KPEvent();
             $event->phonenumber = $input['phonenumber'];
             $event->email = $input['email'];
+            $event->location = $input['location'];
             $event->date = $input['date'];
             $event->start = $input['start'];
             $event->end = $input['end'];
