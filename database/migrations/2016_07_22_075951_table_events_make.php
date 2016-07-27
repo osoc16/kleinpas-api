@@ -11,7 +11,7 @@ class TableEventsMake extends Migration
             $table->increments('id');
             $table->string('phonenumber');
             $table->string('email');
-            $table->string('location');
+            $table->string('place');
             $table->date('date');
             $table->time('start');
             $table->time('end');

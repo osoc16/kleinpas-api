@@ -70,7 +70,7 @@
                 <td class="id"><?=$event->id;?></td>
                 <td><?=$event->phonenumber;?></td>
                 <td><?=$event->email;?></td>
-                <td><?=$event->location;?></td>
+                <td><?=$event->place;?></td>
                 <td class="clickable" <?php if (date('Y-m-d') == date('Y-m-d', strtotime(date('Y-m-j' , strtotime('-7 days', strtotime($event->date)))))) { echo "style='background: #ffdada;'"; } ?>><?=date('Y-m-j' , strtotime('-7 days', strtotime($event->date)));?></td>
                 <td class="clickable" <?php if (date('Y-m-d') == date('Y-m-d', strtotime($event->date))) { echo "style='background: #ffdada;'"; } ?>><?=$event->date;?></td>
                 <td><?=$event->start;?></td>
@@ -86,12 +86,14 @@
         <h1>Passed events</h1>
         <table>
             <tr class="top">
-                <th style="width: 60px;">ID</th>
-                <th style="width: 200px;">Phonenumber</th>
-                <th style="width: 400px;">E-Mail</th>
-                <th style="width: 200px;">Date</th>
-                <th style="width: 100px;">Start</th>
-                <th style="width: 100px; border: 0;">End</th>
+                <th style="">ID</th>
+                <th style="">Phonenumber</th>
+                <th style="">E-Mail</th>
+                <th style="">Location</th>
+                <th style="">Reminder Date</th>
+                <th style="">Date</th>
+                <th style="">Start</th>
+                <th style="border: 0;">End</th>
             </tr>
 
 <?php $events = DB::table('events')->orderBy('date', 'asc')->get(); ?>
@@ -108,6 +110,7 @@
                 <td><?=$event->id;?></td>
                 <td><?=$event->phonenumber;?></td>
                 <td><?=$event->email;?></td>
+                <td><?=$event->place;?></td>
                 <td><?=$event->date;?></td>
                 <td><?=$event->start;?></td>
                 <td style="border: 0;"><?=$event->end;?></td>
